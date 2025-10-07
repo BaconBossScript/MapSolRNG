@@ -121,11 +121,16 @@ end
 wait(0.1)
 for _, i in ipairs(workspace.Map.Ground:GetChildren()) do
     if i:IsA("Part") then
-        i.Size = Vector3.new(i.Size.X + 2, i.Size.Y, i.Size.Z + 2)
+        i.Size = Vector3.new(i.Size.X + 3, i.Size.Y, i.Size.Z + 3)
     end
 end
 wait()
 workspace.Map.Miscs.WaterBlocks:Destroy()
+for _, i in ipairs(workspace.Map.Miscs.FishShop:GetChildren()) do
+    if i.Name ~= "NPC" then
+        i:Destroy()
+    end
+end
 ---------------
 
 
