@@ -125,12 +125,14 @@ for _, i in ipairs(workspace.Map.Ground:GetChildren()) do
     end
 end
 wait()
+
 workspace.Map.Miscs.WaterBlocks:Destroy()
-for _, i in ipairs(workspace.Map.Miscs.FishShop:GetChildren()) do
+
+--[[for _, i in ipairs(workspace.Map.Miscs.FishShop:GetChildren()) do
     if i.Name ~= "NPC" then
         i:Destroy()
     end
-end
+end]]
 ---------------
 
 
