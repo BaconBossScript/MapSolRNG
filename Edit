@@ -7,8 +7,8 @@ for i, part in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetDescend
     end
 end
 if start then
-    local plusx = 84
-    local plusy = 84
+    local plusx = 0
+    local plusy = 55
     getgenv().Pos = {
         X = start.AbsolutePosition.X,
         Y = start.AbsolutePosition.Y
